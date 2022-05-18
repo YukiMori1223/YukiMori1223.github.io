@@ -1,136 +1,147 @@
-baseURL = "http://example.org/"
-languageCode = "en-us"
+baseURL = "https://yukimori1223.github.io/"
+languageCode = "ja-ja"
 theme = "sada"
 disableKinds = ["taxonomy", "taxonomyTerm"]
 
 [params]
-    name = "example.org"
-    title = "Sada Theme"
-    author = "Darshan Baral"
-    description = "Simple portfolio theme"
-    copyright = "Custom copyright message"
+    name = "yukimori1223"
+    title = "My portal"
+    author = "Yuki Mori"
+    description = "Yuki Mor's portal"
+    copyright = "Yuki Mori, 2022"
     theme = "light" # `dark` or `light`
     useResources = false
 
     # Profile section
     [params.profile]
-        name = "Sada Theme"
-        photo = "images/profile.jpg"
+        name = "Yuki Mori"
+        photo = "images/profile.png"
 
     # Section for links to social websites
     [params.social]
         title = "Links"
 
         [[params.social.list]]
-        icon = "fab fa-linkedin-in"
-        url = "#"
-        title = "LinkedIn"
-
-        [[params.social.list]]
         icon = "fab fa-github"
-        url = "#"
+        url = "https://github.com/YukiMori1223?tab=repositories"
         title = "GitHub"
 		
 		[[params.social.list]]
         icon = "ai ai-google-scholar"
-        url = "#"
+        url = "https://scholar.google.com/citations?user=ickwiRwAAAAJ&hl=ja"
         title = "Google Scholar"
-		
+						
 		[[params.social.list]]
-        icon = "ai ai-researchgate"
+        icon = "fab fa-twitter"
         url = "#"
-        title = "ResearchGate"		
+        title = "Twitter"
+		
 
     # Education section
     [params.education]
         title = "Education"
 
         [[params.education.list]]
-        degree = "Masters in Degree 1"
-        college = "University Number 1"
-        dates = "2016 - 2018"
-        thesis_title = "Title of the dissertation"
+        degree = "Doctor of engineering"
+        college = "The University of Tokyo"
+        dates = "2021"
+        thesis_title = "Development of the numerical model for the multiscale numerical simulation in the solid-fluid multiphase flow"
         thesis_link = "#"
 
         [[params.education.list]]
-        degree = "Bachelors in Degree 2"
-        college = "University Number 2"
-        dates = "2010 - 2014"
+        degree = "Master of engineering"
+        college = "The University of Tokyo"
+        dates = "2017"
+        thesis_title = "Development and application of an Euler-Lagrange method for industrial multi-phase flows"
+        thesis_link = "#"
 
-    # Languages section
-    [params.language]
-        title = "Languages"
-
-        [[params.language.list]]
-        language = "English"
-        level = "Fluent"
-				
-        [[params.language.list]]
-        language = "Bird"
-        level = "Basic"
+        [[params.education.list]]
+        degree = "Bachelor of engineering"
+        college = "The University of Tokyo"
+        dates = "2019"
+		thesis_title = "Development of a visualization technique for a large-scale DEM simulation"
+        thesis_link = "#"
 
     # Interests section
     [params.hobbies]
         title = "Hobbies"
 
         [[params.hobbies.list]]
-        interest = "Travelling"
+        interest = "Make movies"
+
+        [[params.hobbies.list]]
+        interest = "Watch movies"
 		
-		[[params.hobbies.list]]
-        interest = "Music"
-
         [[params.hobbies.list]]
-        interest = "Flying"
-
-        [[params.hobbies.list]]
-        interest = "Baking"
+        interest = "Make games"
+	
+	    [[params.hobbies.list]]
+        interest = "Play games"
 
     [params.aboutme]
-        description = "Tagline. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+        description = "This is me."
 
     # Experiences section
     [params.experiences]
         title = "Experiences"
 
         [[params.jobs.list]]
-        position = "Job Number 1"
-        dates = "2018 - *Present*"
+        position = "Researcher"
+        dates = "2022 - *Present*"
 		link = "#"
-        company = "Company name 1"
+        company = "Toyota central R&D labs., Inc."
+		details =""
 
-        [[params.jobs.list]]
-        position = "Job Number 2"
-        dates = "2016 - 2018"
-		link = "#"
-        company = "Company name 2"
-        details = "Brief description of the `work` done. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-
+       
     # Projects section
     [params.projects]
         title = "Projects"
 
         [[params.projects.list]]
-        title = "Awesome Project 1"
-        url = "#"
-        description = "Description of the *awesome* project 1"
+        title = "Project Eula"
+        url = "https://github.com/YukiMori1223/Eula"
+        description = "Eularian-Lagrangean solver"
 		
 		[[params.projects.list]]
-        title = "Awesome Project 2"
+        title = "数学に関する個人的まとめ"
+        url = "https://github.com/YukiMori1223/Math_Book"
+        description = "数学に関する個人的まとめ"
+		
+		[[params.projects.list]]
+        title = "プログラムに関する個人的まとめ"
+        url = "https://github.com/YukiMori1223/Program_Book"
+        description = "プログラムに関する個人的まとめ"
+		
+		[[params.projects.list]]
+        title = "Blenderに関する個人的まとめ"
         url = "#"
-        description = "Description of the **awesome** project 2. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+        description = "Blenderに関する個人的まとめ"
+		
+		[[params.projects.list]]
+        title = "個人的LaTeXテンプレート"
+        url = "https://github.com/YukiMori1223/Template_Book"
+        description = "個人的LaTeXテンプレート"
 
     # Skills section
     [params.skills]
         title = "Skills"
 
         [[params.skills.list]]
-        skill = "Skill 1, Skill 2"
-        skillrating = 95 # out of 100
+        skill = "C++"
+        skillrating = 60
                 
         [[params.skills.list]]
-        skill = "Skill 3"
-        skillrating = 90
+        skill = "Python"
+        skillrating = 40
 		
         [[params.skills.list]]
-        skill = "Skill 4"
+        skill = "Blender"
         skillrating = 80
+		
+		[[params.skills.list]]
+        skill = "Adobe After Effects"
+        skillrating = 90
+		
+		[[params.skills.list]]
+        skill = "Unity"
+        skillrating = 50
